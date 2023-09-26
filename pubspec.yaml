@@ -65,6 +65,7 @@ flutter:
     - images/main_menu/parcelado.png
     - images/main_menu/parceladojuros.png
     - images/smartcard.png
+    - images/paystore.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

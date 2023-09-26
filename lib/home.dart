@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:paystore_payments_flutter/popup_screen/version.dart';
 import 'package:paystore_payments_flutter/screens/credito.dart';
 import 'package:paystore_payments_flutter/screens/debito.dart';
 import 'package:paystore_payments_flutter/screens/parcelado.dart';
@@ -64,7 +65,7 @@ class _HomeState extends State<Home> {
               ),
               const PopupMenuItem<int>(
                 value: 1,
-                child: Text("Settings"),
+                child: Text("Versão"),
               ),
               const PopupMenuItem<int>(
                 value: 2,
@@ -75,7 +76,8 @@ class _HomeState extends State<Home> {
             if (value == 0) {
               print("My account menu is selected.");
             } else if (value == 1) {
-              print("Settings menu is selected.");
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const VersionScreen()));
+              // Navigator.pushNamed(context, "/version");
             } else if (value == 2) {
               print("Logout menu is selected.");
             }
@@ -182,6 +184,13 @@ class _HomeState extends State<Home> {
                     child: Image.asset("images/main_menu/parceladojuros.png", height: 100),
                   )
                 ],
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.all(20),
+              child: Text(
+                "PayStore App Corporation",
+                style: TextStyle(fontSize: 16, color: Colors.black),
               ),
             ),
           ],

@@ -49,6 +49,10 @@ class _ScreenParceladoJurosState extends State<ScreenParceladoJuros> {
                 keyboardType: TextInputType.number,
                 decoration: const InputDecoration(labelText: "Valor do pagamento: "),
               ),
+              const Padding(
+                padding: EdgeInsets.all(20),
+                child: Text("Parcelas"),
+              ),
               RadioListTile(
                 title: const Text("2x"),
                 value: "2",

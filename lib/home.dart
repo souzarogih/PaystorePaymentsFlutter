@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
+import 'package:paystore_payments_flutter/menu_drawer/payments.dart';
 import 'package:paystore_payments_flutter/popup_screen/version.dart';
 import 'package:paystore_payments_flutter/screens/credito.dart';
 import 'package:paystore_payments_flutter/screens/debito.dart';
@@ -87,68 +88,75 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.red,
       ),
       drawer: Drawer(
-        child: SafeArea(
-            child: Column(
-          children: [
-            ListTile(
-              dense: true,
-              title: const Text("DADOS DO TERMINAL"),
-              leading: const Icon(Icons.person),
-              onTap: () {
-                //action when this menu is pressed
-              },
-            ),
-            ListTile(
-              dense: true,
-              title: const Text("INICIALIZAR"),
-              leading: const Icon(Icons.home),
-              onTap: () {
-                //action when this menu is pressed
-              },
-            ),
-            ListTile(
-              dense: true,
-              title: const Text("My Orders"),
-              leading: const Icon(Icons.add_box),
-              onTap: () {
-                //action when this menu is pressed
-              },
-            ),
-            ListTile(
-              dense: true,
-              title: const Text("My Favourites"),
-              leading: const Icon(Icons.monitor_heart),
-              onTap: () {
-                //action when this menu is pressed
-              },
-            ),
-            ExpansionTile(
-              title: const Text("CONFIGURAÇÕES"),
-              leading: const Icon(Icons.settings), //add icon
-              childrenPadding: const EdgeInsets.only(left: 60), //children padding
-              children: [
-                ListTile(
-                  title: const Text("Child Category 1"),
-                  onTap: () {
-                    //action on press
-                  },
-                ),
+        // Image.asset("images/paystore.png"),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 60, left: 8),
+          child: SafeArea(
+              child: Column(
+            children: [
+              // Image.asset("images/paystore.png"),
+              ListTile(
+                dense: true,
+                title: const Text("DADOS DO TERMINAL", style: TextStyle(fontSize: 16)),
+                leading: const Icon(Icons.person),
+                onTap: () {
+                  //action when this menu is pressed
+                },
+              ),
+              ListTile(
+                dense: true,
+                title: const Text("INICIALIZAR", style: TextStyle(fontSize: 16)),
+                leading: const Icon(Icons.send),
+                onTap: () {
+                  const CircularProgressIndicator();
+                  //action when this menu is pressed
+                },
+              ),
+              ListTile(
+                dense: true,
+                title: const Text("PAGAMENTOS", style: TextStyle(fontSize: 16)),
+                leading: const Icon(Icons.payments),
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Payments()));
+                },
+              ),
+              ListTile(
+                dense: true,
+                title: const Text("My Favourites", style: TextStyle(fontSize: 16)),
+                leading: const Icon(Icons.monitor_heart),
+                onTap: () {
+                  //action when this menu is pressed
+                },
+              ),
+              ExpansionTile(
+                title: const Text("CONFIGURAÇÕES", style: TextStyle(fontSize: 16)),
+                leading: const Icon(Icons.settings), //add icon
+                childrenPadding: const EdgeInsets.only(left: 60), //children padding
+                children: [
+                  ListTile(
+                    title: const Text("Child Category 1", style: TextStyle(fontSize: 16)),
+                    onTap: () {
+                      //action on press
+                    },
+                  ),
 
-                ListTile(
-                  title: const Text("Child Category 2"),
-                  onTap: () {
-                    //action on press
-                  },
-                ),
+                  ListTile(
+                    title: const Text("Child Category 2", style: TextStyle(fontSize: 16)),
+                    onTap: () {
+                      //action on press
+                    },
+                  ),
 
-                //more child menu
-              ],
-            )
-          ],
-        )),
+                  //more child menu
+                ],
+              )
+            ],
+          )),
+        ),
       ),
       body: Container(
-        padding: const EdgeInsets.all(16),
+        // padding: const EdgeInsets.all(20),
+        padding: const EdgeInsets.only(top: 1),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,

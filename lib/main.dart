@@ -10,6 +10,7 @@ void main() {
       initialRoute: "/",
       routes: {
         "/version": (context) => const VersionScreen(),
+        // "/payments": (context) => const Payments(),
       },
     ),
   );

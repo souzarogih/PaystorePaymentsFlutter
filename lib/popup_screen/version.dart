@@ -11,24 +11,40 @@ class _VersionScreenState extends State<VersionScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       body: Container(
-        padding: const EdgeInsets.all(32),
+        padding: const EdgeInsets.only(top: 170),
         child: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Image.asset("images/paystore.png"),
+              Image.asset(
+                "images/ps-paystore.png",
+                height: 60,
+              ),
               const Padding(
                 padding: EdgeInsets.only(
-                  top: 30,
-                  bottom: 30,
+                  top: 80,
+                  bottom: 20,
                 ),
-                child: Text(
-                  "paystore-flutter-app-demo 1.0.0",
-                  style: TextStyle(fontSize: 16, color: Colors.white),
+                child: Center(
+                  child: Text(
+                    "Paystore Flutter App Demo \n                   1.0.0",
+                    style: TextStyle(fontSize: 22, color: Colors.black),
+                  ),
                 ),
               ),
+              const Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(40),
+                    child: Center(
+                      child: Icon(Icons.abc),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
         ),

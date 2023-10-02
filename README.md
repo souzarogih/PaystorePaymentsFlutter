@@ -1,6 +1,8 @@
-# paystore_payments_flutter
+<h2>Paystore Payments Flutter</h2>
 
-A new Flutter project.
+Este projeto contém a integração de um aplicativo android com a api de pagamentos físicos da Paystore utilizando as tecnologias Flutter e Dart.
+
+[Site PayStore](https://www.paystore.com.br/)
 
 ## Getting Started
 
@@ -17,12 +19,50 @@ samples, guidance on mobile development, and a full API reference.
 
 
 
-https://www.fluttercampus.com/guide/333/add-expandable-menu-drawer-flutter/
-https://www.fluttercampus.com/guide/223/popup-menu-on-flutter-appbar/
-https://www.fluttercampus.com/guide/332/add-drawer-navigation-flutter/
+- [expandable-menu-drawer-flutter](https://www.fluttercampus.com/guide/333/add-expandable-menu-drawer-flutter/)
+- [popup-menu-on-flutter-appbar](https://www.fluttercampus.com/guide/223/popup-menu-on-flutter-appbar/)
+- [add-drawer-navigation-flutter](https://www.fluttercampus.com/guide/332/add-drawer-navigation-flutter/)
 
 
 
-<img src="https://lh3.googleusercontent.com/pw/ADCreHffVDO-hoAV9Vx3vDGljeQ6az5oiGND4yeDHBVqVsDM0vDTXO3AeFZ8RwB-lIt-6NNuQnKhkvdy_zvJ1JQcKwS5V1EMvuXonL8RjznM_I_aFWZ0gBFOQSHcrqRUW8xCivIvl6Rq-Lj0MAAreXIsIDrvkKsXbJSn237fNjMgYPlaY3-BT1gJc5s3oAJZwj4BKUKyRY9oxzXHDK97aj-gsydFfWMtZlhBFBOZCurdoD8gRzUbkDYgmJrpIsdTpYmnE403-ZpyolWWC9b9fxlnCXVnRtc7j1TUl3KfGdZwatkh1y4oZGnzQRfz-8cD969bfF-kQFho2TaLA7fjQ3QgFqVZso8HxTUqF21Hg4BOg-XYlcpkOltBPKpsaHitX_CNsvU1WS6OQW1C0iWhLz6EBs1CQTC3umiGSywK3t_WO8RNlL4j56BC1pWlOnn9hu31xq8pLekBqeW3uT-9InN0MffVnfbuPlOIFKoLFFgzgmXR9At3fkPQyou4su7yhr_oRYsfPc66YKbtGJyCVH9t2khA7pnM5GWjd1OVFMkPZIVhO5p03zSTONzWCjmXnzqEbiIeRbLL1oNNIol-1_8WRb7njWuw04tDgCSwc-FDQY5Nvqj_dQcDKCDCSmQh4cuqanlfeqTVHl6Gyatdox0mNJ7786kzLK9C0b4fnmwPCJno_CD6F65Moin45vyNzKLwPOpn3dKwKVsSAHdpUts2vjNSB800FZfJmcXpcnPlZiqUOJEP9RbnZdz8JwKz8sUIEq8yhiym8nQn5rsrpnR5kRXuY8qWVxrbQAB99Dtyd5rB982NNJGItMIl92iBRLru6DAsXT7EihjOA9lmDrVHcCbfPfG3CpOsjEuKnQXkaTGPSVifFixiG1xGe-sekCW8jmD7gC68WjytVJjjuKU-Sg=w1745-h931-s-no?authuser=0">
+<img src="https://lh3.googleusercontent.com/pw/ADCreHfTB1ah31Ry-VvKqjiBWz1IORewSgzJ1KElr-nsxXpsQdIvPgc4Fp-PdvvdKf0Ml_O1jjL5lUCpPUCvufqskBL9FA1Ps9KNa0kCYDhrAtYdH9h6xuG06NsVbCOA0FTvjWIXljUL9laZLDS4NmTJ9YiBswl2uofzBYk7xG2tz3zsVgEMcjBbwLxOuaTtw_87Ex46ZaFRI7bIvPs7NoB8xySzbonzL7TdoUqXzwoBLZfEu5nMGxilrmEFrh_iMNxokho0V9e8JaCfHhxQ9WY3uQiGMu_VAks6Oc68r6Z9B1kznbQeGTSs2yl2DYllfmass-1nlJ0MJ4xYU9Lqt4wOvvREaARftlOibaOPfhuoZtJA4fhukLvetX3k9qaJwHIMTrnLxAK6tIL8FXYD9WeVTzd4bp0r6-m5C7UM6tBuv8t3NuyLORZhlEAUDCDwGcqAX7_ELQ-FpXQKKzc7CyOs7XskKLhu02oBFBY7H2qgYyoqY2DWIlTcjCCX3jB8-g-HJ1QzFwFGKha3IsjKdID5t6RK1YXZQrZF958msy6NKgea8ExSrEwdNIWnEPnmXi-ddGEm00Hk8OJnphMCcW7lCPY790efWw5RiC3oIElq0aCVj6tdr2aHhFHWe7tnsECYiFOi7iF3m1GGTLejNyBMVUASw6XL_Qx_e0guChXVbW4YaavFmiBqoKVFPMiYHSd7JCSi81NME4Bw6X-Ic8s95rIaFEi40MRO6hw0TKgmyapx536FXqGub5XPJdx4xbYIwaJfgUMgmenNL-B01DkkXfrCqp89UqjZTYcnDnACfGMJSJGSTGKnARMdGsE8NlZq-QC8zqAGs7SfQ4yn1iN3mxXPnsIIbahkTrrPoj2O6oaIs3ehd5fwlvHKJ7wwKkWqF9p3-OuE5u-vBMne0zFkew=w1363-h931-s-no?authuser=0">
 
-<img src="https://lh3.googleusercontent.com/pw/ADCreHfH0hQhfq1vlYteSN9CqA_4FGhkUblt7jiSav2ds9dvlO_aVg8_fCMJBdonGY7jQZ_ESNsOrp2C_-WFaspBXUqiUZFbtwvv2oUzW5cM5Ir2pGv_HwrTfVQsdlmN3AGV0HZ_XtahGV7zqegKyHdH8yy1-NPfRo3AARIFER1ykMAnilAirusXiyfIwo5TTo-Ec_JT-xRkVfcjUAES8AbVcxGSH05XM38b4UoRt5gWwIvmwL79rRD52d4juzYMPKgVCk61qVH06UcGWDkCvudU0UmtRgxQjYCb4xU2lZ17mnukhrvMoBdW-_sg9wH_P-lBu_NfjivnIbPbfKSCFoUsAyknYmp9JC1EOq4VdxR7UdyugYFRoljrJ0TEkCkUCsA3JGsssqjFjaPksmSsRLm9UHta51o1shPfPT1ToF-U5cnHICGUS51Byc2bzCaW0grUQX1EX7tcc08q-mHKcYPm9GheEqgxP28atMQ8jFoTNj4fCU_vhzF5tgek8nc-yW51ZzODQwMnMIkdIUdtpZLF7gNG5Mi3nD0--wKA9Bn7sq889uWQWH9ardR7xgrAW45V2As3iuzsHBG5dUl9rYT5WlJEQv5UfHltFUE_jQLiZhdqFStwVDfASftpWTlJtuVw0PlFPaku3uxAgPjO1hLLGJmpk5KLmNJMhKDiLz0ZLbiJRXVJq6YFJQVe02fmZOAeYXR0FeTYQIrnSkVrIOZM2P1cHnhL4LEJszCTovyUimmhsf8gbj1U2DsPrgB9Qdx0P8kKMUmmX2qDpKflZxCTvKrFyJWyii4-l_T5ZwPQ0IsSxuiexzMgryCnXTHhvE6aOXu79V6dRO5EuU6oWLq5oAeIMfX3mLVYSkvMqKMSDevFMXTVk3fmD4fS6zIcttKPqr9lmQ4mB8VDA08-3BM1HA=w1715-h931-s-no?authuser=0">
+
+### 🎲 Rodando a aplicação
+
+```bash
+# Comando para executar via terminal
+$ flutter run
+```
+
+```bash
+# Comando para executar no VSCode
+Pressione F5
+```
+
+## License
+>Enviar um e-mail para _higor.andrade@hotmail.com_ com o nome do projeto no título do
+> e-mail, solicitando o uso deste projeto.
+
+Autor
+---
+
+<a href="https://github.com/souzarogih">
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/33656742?v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Higor Souza</b></sub></a> <a href="https://github.com/souzarogih" title="Rocketseat">🚀</a>
+
+
+[![Twitter Badge](https://img.shields.io/badge/-@HigorSouza04-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/HigorSouza04)](https://twitter.com/i/redirect?url=https%3A%2F%2Ftwitter.com%2FHigorSouza04&t=1&cn=bG9naW5fbm90aWZpY2F0aW9uX2VtYWls&sig=a0e0273dce32a5c70e3ef154782b2ce5c4a5ef53&iid=cb7ce91830aa4ed4a58b1b4e7edbbfff&uid=343469291&nid=296+1)
+[![Linkedin Badge](https://img.shields.io/badge/-HigorSouza-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https:https://www.linkedin.com/in/higor-souza-aab27051/)](https://www.linkedin.com/in/higor-souza-aab27051/)
+[![Gmail Badge](https://img.shields.io/badge/-rogih.andrade@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:rogih.andrade@gmail.com)](mailto:rogih.andrade@gmail.com)
+[![Hotmail Badge](https://img.shields.io/badge/-Hotmail-0078D4?style=flat-square&amp;logo=microsoft-outlook&amp;logoColor=white&amp;link=mailto:higor.andrade@hotmail.com)](mailto:higor.andrade@hotmail.com)
+[![GitHub](https://badgen.net/badge/icon/github?icon=github&label)](https://github.com/souzarogih)
+
+### Readme personalizado através dos seguintes links
+
+- [Como-fazer-um-bom-readme](https://blog.rocketseat.com.br/como-fazer-um-bom-readme/)
+- [Thiago Marinho](https://gist.github.com/tgmarinho/931ce1ad6de9c24c7f3b6d7848de9fbd)
+- [GitHub Markdown](https://github.com/ekalinin/github-markdown-toc#table-of-contents)
+- [Shields](https://shields.io/)
+- [List of Badges, in Markdown](https://github.com/Naereen/badges)

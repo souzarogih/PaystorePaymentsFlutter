@@ -93,7 +93,6 @@ class _HomeState extends State<Home> {
           child: SafeArea(
               child: Column(
             children: [
-              // Image.asset("images/paystore.png"),
               ListTile(
                 dense: true,
                 title: Image.asset("images/ps-paystore.png", height: 80),
@@ -167,9 +166,13 @@ class _HomeState extends State<Home> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const Text(
+              "Menu Transação",
+              style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0), fontSize: 22, fontWeight: FontWeight.bold),
+            ),
             Image.asset("images/smartcard.png"),
             Padding(
-              padding: const EdgeInsets.only(top: 92),
+              padding: const EdgeInsets.only(top: 25),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [

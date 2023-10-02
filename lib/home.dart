@@ -2,6 +2,7 @@ import 'dart:developer';
 
 import 'package:flutter/material.dart';
 import 'package:paystore_payments_flutter/menu_drawer/payments.dart';
+import 'package:paystore_payments_flutter/menu_drawer/terminal_data.dart';
 import 'package:paystore_payments_flutter/popup_screen/version.dart';
 import 'package:paystore_payments_flutter/screens/credito.dart';
 import 'package:paystore_payments_flutter/screens/debito.dart';
@@ -89,23 +90,25 @@ class _HomeState extends State<Home> {
       ),
       drawer: Drawer(
         child: Padding(
-          padding: const EdgeInsets.only(top: 25, left: 1),
+          padding: const EdgeInsets.only(top: 20, left: 1),
           child: SafeArea(
               child: Column(
             children: [
               ListTile(
                 dense: true,
-                title: Image.asset("images/ps-paystore.png", height: 80),
+                title: Image.asset("images/ps-paystore.png", height: 40),
                 // onTap: () {
                 //   //action when this menu is pressed
                 // },
               ),
+              const Divider(color: Colors.grey),
               ListTile(
                 dense: true,
                 title: const Text("DADOS DO TERMINAL", style: TextStyle(fontSize: 16)),
                 leading: const Icon(Icons.person),
                 onTap: () {
                   //action when this menu is pressed
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const TerminalData()));
                 },
               ),
               ListTile(

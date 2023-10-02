@@ -25,13 +25,13 @@ class _VersionScreenState extends State<VersionScreen> {
               ),
               const Padding(
                 padding: EdgeInsets.only(
-                  top: 80,
-                  bottom: 20,
+                  top: 50,
+                  bottom: 80,
                 ),
                 child: Center(
                   child: Text(
-                    "Paystore Flutter App Demo \n                   1.0.0",
-                    style: TextStyle(fontSize: 22, color: Colors.black),
+                    "Paystore Flutter App Demo",
+                    style: TextStyle(fontSize: 20, color: Colors.black),
                   ),
                 ),
               ),
@@ -40,11 +40,57 @@ class _VersionScreenState extends State<VersionScreen> {
                   Padding(
                     padding: EdgeInsets.all(40),
                     child: Center(
-                      child: Icon(Icons.abc),
+                      child: Column(
+                        children: [
+                          Icon(Icons.developer_mode, size: 40, color: Color.fromRGBO(15, 119, 190, 1.0)),
+                          Text(
+                            "Flutter",
+                            style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0)),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(40),
+                    child: Center(
+                      child: Column(
+                        children: [
+                          Icon(
+                            Icons.devices_fold,
+                            size: 40,
+                            color: Color.fromRGBO(15, 119, 190, 1.0),
+                          ),
+                          Text(
+                            "SmartPOS",
+                            style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0)),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.all(40),
+                    child: Center(
+                      child: Column(
+                        children: [
+                          Icon(Icons.star, size: 36, color: Color.fromRGBO(15, 119, 190, 1.0)),
+                          Text("5", style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0)))
+                        ],
+                      ),
                     ),
                   ),
                 ],
-              )
+              ),
+              // const Text("V1.0.0"),
+              const Padding(
+                // padding: EdgeInsets.all(50),
+                padding: EdgeInsets.only(top: 200),
+                child: Text(
+                  "V1.0.0",
+                  style: TextStyle(fontSize: 16, color: Colors.black),
+                ),
+              ),
             ],
           ),
         ),

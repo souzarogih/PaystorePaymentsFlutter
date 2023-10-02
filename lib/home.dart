@@ -85,16 +85,22 @@ class _HomeState extends State<Home> {
           })
         ],
         title: const Text("PayStore Payments Flutter"),
-        backgroundColor: Colors.red,
+        backgroundColor: const Color.fromRGBO(15, 119, 190, 1.0),
       ),
       drawer: Drawer(
-        // Image.asset("images/paystore.png"),
         child: Padding(
-          padding: const EdgeInsets.only(top: 60, left: 8),
+          padding: const EdgeInsets.only(top: 25, left: 1),
           child: SafeArea(
               child: Column(
             children: [
               // Image.asset("images/paystore.png"),
+              ListTile(
+                dense: true,
+                title: Image.asset("images/ps-paystore.png", height: 80),
+                // onTap: () {
+                //   //action when this menu is pressed
+                // },
+              ),
               ListTile(
                 dense: true,
                 title: const Text("DADOS DO TERMINAL", style: TextStyle(fontSize: 16)),
@@ -156,14 +162,14 @@ class _HomeState extends State<Home> {
       ),
       body: Container(
         // padding: const EdgeInsets.all(20),
-        padding: const EdgeInsets.only(top: 1),
+        padding: const EdgeInsets.only(top: 10),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Image.asset("images/smartcard.png"),
             Padding(
-              padding: const EdgeInsets.only(top: 72),
+              padding: const EdgeInsets.only(top: 92),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -179,23 +185,24 @@ class _HomeState extends State<Home> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 32),
+              padding: const EdgeInsets.only(top: 52),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   GestureDetector(
                     onTap: _openParcelado,
-                    child: Image.asset("images/main_menu/parcelado.png", height: 100),
+                    child: Image.asset("images/main_menu/card-parc.png", height: 100),
                   ),
                   GestureDetector(
                     onTap: _openParceladoJuros,
-                    child: Image.asset("images/main_menu/parceladojuros.png", height: 100),
+                    child: Image.asset("images/main_menu/card-parc-juros.png", height: 100),
                   )
                 ],
               ),
             ),
             const Padding(
-              padding: EdgeInsets.all(20),
+              // padding: EdgeInsets.all(50),
+              padding: EdgeInsets.only(top: 78),
               child: Text(
                 "PayStore App Corporation",
                 style: TextStyle(fontSize: 16, color: Colors.black),

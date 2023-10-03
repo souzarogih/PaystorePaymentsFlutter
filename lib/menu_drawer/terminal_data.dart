@@ -33,7 +33,7 @@ class _TerminalDataState extends State<TerminalData> {
             endIndent: 30,
           ),
           //Lojista
-          const Text("Lojista", style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0))),
+          const Text("Lojista", style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0), fontSize: 12)),
           const Padding(padding: EdgeInsets.only(top: 10)),
           TextFormField(
             decoration: InputDecoration(
@@ -48,7 +48,7 @@ class _TerminalDataState extends State<TerminalData> {
           const Padding(padding: EdgeInsets.only(top: 10)),
 
           //MID
-          const Text("Merchant Acquirer - MID", style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0))),
+          const Text("Merchant Acquirer - MID", style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0), fontSize: 12)),
           const Padding(padding: EdgeInsets.only(top: 10)),
           TextFormField(
             decoration: InputDecoration(
@@ -65,7 +65,7 @@ class _TerminalDataState extends State<TerminalData> {
           //CNPJ/CPF
           const Text(
             "CNPJ/CPF",
-            style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0)),
+            style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0), fontSize: 12),
           ),
           const Padding(padding: EdgeInsets.only(top: 10)),
           TextFormField(
@@ -97,7 +97,7 @@ class _TerminalDataState extends State<TerminalData> {
             thickness: 1,
             endIndent: 30,
           ),
-          const Text("Terminal Lógico", style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0))),
+          const Text("Terminal Lógico", style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0), fontSize: 12)),
           const Padding(padding: EdgeInsets.only(top: 10)),
           TextFormField(
             decoration: InputDecoration(
@@ -112,7 +112,7 @@ class _TerminalDataState extends State<TerminalData> {
           const Padding(padding: EdgeInsets.only(top: 10)),
 
           //TID
-          const Text("Terminal Acquirer - TID", style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0))),
+          const Text("Terminal Acquirer - TID", style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0), fontSize: 12)),
           const Padding(padding: EdgeInsets.only(top: 10)),
           TextFormField(
             decoration: InputDecoration(
@@ -145,7 +145,7 @@ class _TerminalDataState extends State<TerminalData> {
 
           // Serial
           //TID
-          const Text("Serial do Equipamento", style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0))),
+          const Text("Serial do Equipamento", style: TextStyle(color: Color.fromRGBO(15, 119, 190, 1.0), fontSize: 12)),
           const Padding(padding: EdgeInsets.only(top: 10)),
           TextFormField(
             decoration: InputDecoration(

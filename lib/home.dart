@@ -104,8 +104,8 @@ class _HomeState extends State<Home> {
               const Divider(color: Colors.grey),
               ListTile(
                 dense: true,
-                title: const Text("DADOS DO TERMINAL", style: TextStyle(fontSize: 16)),
-                leading: const Icon(Icons.person),
+                title: const Text("DADOS DO TERMINAL", style: TextStyle(fontSize: 16, color: Color.fromRGBO(15, 119, 190, 1.0))),
+                leading: const Icon(Icons.person, color: Color.fromRGBO(15, 119, 190, 1.0)),
                 onTap: () {
                   //action when this menu is pressed
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const TerminalData()));
@@ -113,8 +113,8 @@ class _HomeState extends State<Home> {
               ),
               ListTile(
                 dense: true,
-                title: const Text("INICIALIZAR", style: TextStyle(fontSize: 16)),
-                leading: const Icon(Icons.send),
+                title: const Text("INICIALIZAR", style: TextStyle(fontSize: 16, color: Color.fromRGBO(15, 119, 190, 1.0))),
+                leading: const Icon(Icons.send, color: Color.fromRGBO(15, 119, 190, 1.0)),
                 onTap: () {
                   const CircularProgressIndicator();
                   //action when this menu is pressed
@@ -122,23 +122,23 @@ class _HomeState extends State<Home> {
               ),
               ListTile(
                 dense: true,
-                title: const Text("PAGAMENTOS", style: TextStyle(fontSize: 16)),
-                leading: const Icon(Icons.payments),
+                title: const Text("PAGAMENTOS", style: TextStyle(fontSize: 16, color: Color.fromRGBO(15, 119, 190, 1.0))),
+                leading: const Icon(Icons.payments, color: Color.fromRGBO(15, 119, 190, 1.0)),
                 onTap: () {
                   Navigator.push(context, MaterialPageRoute(builder: (context) => const Payments()));
                 },
               ),
               ListTile(
                 dense: true,
-                title: const Text("My Favourites", style: TextStyle(fontSize: 16)),
-                leading: const Icon(Icons.monitor_heart),
+                title: const Text("My Favourites", style: TextStyle(fontSize: 16, color: Color.fromRGBO(15, 119, 190, 1.0))),
+                leading: const Icon(Icons.monitor_heart, color: Color.fromRGBO(15, 119, 190, 1.0)),
                 onTap: () {
                   //action when this menu is pressed
                 },
               ),
               ExpansionTile(
-                title: const Text("CONFIGURAÇÕES", style: TextStyle(fontSize: 16)),
-                leading: const Icon(Icons.settings), //add icon
+                title: const Text("CONFIGURAÇÕES", style: TextStyle(fontSize: 16, color: Color.fromRGBO(15, 119, 190, 1.0))),
+                leading: const Icon(Icons.settings, color: Color.fromRGBO(15, 119, 190, 1.0)), //add icon
                 childrenPadding: const EdgeInsets.only(left: 60), //children padding
                 children: [
                   ListTile(
@@ -147,15 +147,18 @@ class _HomeState extends State<Home> {
                       //action on press
                     },
                   ),
-
                   ListTile(
                     title: const Text("Child Category 2", style: TextStyle(fontSize: 16)),
                     onTap: () {
                       //action on press
                     },
                   ),
-
-                  //more child menu
+                  const ListTile(
+                    title: Text(
+                      "V1.0.0",
+                      style: TextStyle(fontSize: 16, color: Colors.black),
+                    ),
+                  ),
                 ],
               )
             ],

@@ -25,41 +25,56 @@ class _ScreenDebitoState extends State<ScreenDebito> {
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: const EdgeInsets.all(16),
+          // alignment: Alignment.center,
+          padding: const EdgeInsets.all(60),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Row(
-                children: [
-                  Image.asset("images/main_menu/debito.png", height: 50),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 10),
-                    child: Text(
-                      "Venda à Débito",
-                      style: TextStyle(fontSize: 20),
-                    ),
+              Image.asset("images/main_menu/debito.png", height: 140),
+              const Padding(
+                // padding: EdgeInsets.only(left: 10),
+                padding: EdgeInsets.all(50),
+                child: Center(
+                  child: Text(
+                    "Venda à Débito",
+                    style: TextStyle(fontSize: 20),
                   ),
-                ],
-              ),
-              TextField(
-                controller: _paymentValue,
-                keyboardType: TextInputType.number,
-                decoration: const InputDecoration(labelText: "Valor do pagamento: "),
+                ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
                 child: Center(
-                  child: ElevatedButton(
+                  child: TextField(
+                    controller: _paymentValue,
+                    keyboardType: TextInputType.number,
+                    style: const TextStyle(fontSize: 14),
+                    decoration: const InputDecoration(
+                      labelText: "Valor do pagamento ex: 80,00",
+                      alignLabelWithHint: true,
+                      floatingLabelAlignment: FloatingLabelAlignment.center,
+                      contentPadding: EdgeInsets.only(top: 20, bottom: 20, left: 22, right: 22),
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 60),
+                child: SizedBox(
+                  height: 46,
+                  child: ElevatedButton.icon(
+                    style: ElevatedButton.styleFrom(backgroundColor: Colors.green),
+                    icon: const Icon(
+                      Icons.payment,
+                      size: 30,
+                    ),
                     onPressed: () {
                       // print('payment: ${_paymentValue.text}');
                       _doPay(_paymentValue.text);
                     },
-                    child: const Text(
+                    label: const Text(
                       "Pagar no Débito",
-                      style: TextStyle(
-                        fontSize: 16,
-                      ),
+                      style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
                     ),
                   ),
                 ),

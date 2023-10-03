@@ -44,41 +44,57 @@ class _ScreenParceladoJurosState extends State<ScreenParceladoJuros> {
                   ),
                 ],
               ),
-              TextField(
-                controller: _paymentValue,
-                keyboardType: TextInputType.number,
-                decoration: const InputDecoration(labelText: "Valor do pagamento: "),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Padding(
+                    // padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.symmetric(horizontal: 0.1, vertical: 0.11),
+                    child: Text("Parcelas"),
+                  ),
+                  RadioListTile(
+                    title: const Text("2x"),
+                    value: "2",
+                    groupValue: _escolhaUsuario,
+                    onChanged: (String? escolha) {
+                      setState(() {
+                        _escolhaUsuario = escolha;
+                      });
+                      print("Resultado: $escolha");
+                    },
+                  ),
+                  const Padding(padding: EdgeInsets.only(bottom: 1)),
+                  // const Padding(padding: EdgeInsets.only(bottom: 1)),
+                  RadioListTile(
+                    title: const Text("3x"),
+                    value: "3",
+                    groupValue: _escolhaUsuario,
+                    onChanged: (String? escolha) {
+                      setState(() {
+                        _escolhaUsuario = escolha;
+                      });
+                      print("Resultado: $escolha");
+                    },
+                  ),
+                ],
               ),
-              const Padding(
-                padding: EdgeInsets.all(20),
-                child: Text("Parcelas"),
-              ),
-              RadioListTile(
-                title: const Text("2x"),
-                value: "2",
-                groupValue: _escolhaUsuario,
-                onChanged: (String? escolha) {
-                  setState(() {
-                    _escolhaUsuario = escolha;
-                  });
-                  print("Resultado: $escolha");
-                },
-              ),
-              RadioListTile(
-                title: const Text("3x"),
-                value: "3",
-                groupValue: _escolhaUsuario,
-                onChanged: (String? escolha) {
-                  setState(() {
-                    _escolhaUsuario = escolha;
-                  });
-                  print("Resultado: $escolha");
-                },
-              ),
-              Padding(
-                padding: const EdgeInsets.only(top: 20),
-                child: Center(
-                  child: ElevatedButton(
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 100),
+                    child: TextField(
+                      controller: _paymentValue,
+                      keyboardType: TextInputType.number,
+                      decoration: const InputDecoration(
+                        labelText: "Valor do pagamento: ",
+                        // labelStyle: TextStyle(fontSize: 14),
+                      ),
+                    ),
+                  ),
+                  ElevatedButton(
                     onPressed: () {
                       // print('payment: ${_paymentValue.text}');
                       _doPay(_paymentValue.text);
@@ -90,7 +106,7 @@ class _ScreenParceladoJurosState extends State<ScreenParceladoJuros> {
                       ),
                     ),
                   ),
-                ),
+                ],
               ),
             ],
           ),

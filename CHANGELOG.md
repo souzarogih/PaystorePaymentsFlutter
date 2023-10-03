@@ -13,7 +13,10 @@ Added
 Added
 #0003 | Adicionando uma tela de dados do terminal
 
-
 [1.0.3] 2023-10-03
 Added
 #0004 | Ajuste na tela de pagamento com débito
+
+[1.0.4] 2023-10-03
+Added
+#0005 | Ajuste na tela de pagamento com crédito
